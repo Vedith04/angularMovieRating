@@ -1,0 +1,73 @@
+.movies{
+    display: flex;
+}
+.all_movies{
+    border-right: 1px solid #fcd827;
+    width: 70%;
+    min-height: calc(100vh - 55px);
+    padding: 20px 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid #fcd827;
+    padding-left: 10px;
+}
+.view_all{
+    color: #ff9900;
+    cursor: pointer;
+}
+.popular_movies{
+    width: 30%;
+    min-height: calc(100vh - 55px);
+}
+.movie-thumbnail{
+    display: flex;
+    justify-content: space-between;
+}
+.cover{
+    border-radius: 5px;
+}
+.detail{
+    width: 140px;
+}
+.name{
+    font-weight: bold;
+    margin-top: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+.popular_movies{
+    width: 30%;
+    min-height: calc(100vh - 55px);
+    padding: 20px 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.popular_movies h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid #fcd827;
+    padding-left: 10px;
+}
+.movie2{
+    margin-bottom: 5px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name2{
+    font-weight: bold;
+    cursor: pointer;
+}
+.view_all2{
+    color: #ff9900;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 30px;
+}

@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div class="movies">
+    <div class="all_movies">
+        <div class="trending_movies mb-3">
+            <div class="top mb-3">
+                <h4>Trending Movies</h4>
+                <div class="view_all">
+                    View All
+                </div>
+            </div>
+            <div class="movie-thumbnail">
+                <div class="movie" *ngFor="let item of trendMovies">
+                    <div class="cover" (click)="goToMovie('trending',item.id)">
+                        <img src={{item.cover}} alt="" width="140px" height="200px">
+                    </div>
+                    <div class="detail">
+                        <div class="name"  (click)="goToMovie('trending',item.id)">{{item.name}}</div>
+                        <div class="rating">
+                            <app-star-rating [rating]="item.rating" [isReadOnly]="true"></app-star-rating>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="theatre_movies">
+            <div class="top mb-3">
+                <h4>Popular in Theatres</h4>
+                <div class="view_all">
+                    View All
+                </div>
+            </div>
+            <div class="movie-thumbnail">
+                <div class="movie" *ngFor="let item of theatreMovies">
+                    <div class="cover" (click)="goToMovie('theatre',item.id)">
+                        <img src={{item.cover}} alt="" width="140px" height="200px">
+                    </div>
+                    <div class="detail">
+                        <div class="name" (click)="goToMovie('theatre',item.id)">{{item.name}}</div>
+                        <div class="rating">
+                            <app-star-rating [rating]="item.rating" [isReadOnly]="true"></app-star-rating>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular_movies">
+        <h4>All Time Popular</h4>
+        <div class="moviess"> 
+            <div class="movie2" *ngFor="let item of popularMovies">
+                <div class="name2" (click)="goToMovie('popular',item.id)">{{item.name}}</div>
+                <div class="rating2">
+                    <app-star-rating [rating]="item.rating" [isReadOnly]="true"></app-star-rating>
+                </div>
+            </div>
+        </div>
+        <div class="view_all2">
+            View All
+        </div>
+    </div>
+</div>

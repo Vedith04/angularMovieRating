@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdc827;
+    height: 55px;
+}
+.brand{
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.logout{
+    margin-right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
